@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main () {
+    
+    int num;
+    
+    printf("digite um numero de 1 à 7:\n");
+    scanf("%i", &num);
+    
+    if (num > 7 || num <= 0) {
+        
+        printf("número invalido\n");
+        
+    return 1;
+    }
+   
+   switch (num) {
+       case 1: printf("domingo\n");
+       break;
+       case 2: printf("segunda\n");
+       break;
+       case 3: printf("terça\n");
+       break;
+       case 4: printf("quarta\n");
+       break;
+       case 5: printf("quinta\n");
+       break;
+       case 6: printf("sexta\n");
+       break;
+       case 7: printf("sábado\n");
+       break;
+   }
+    
+    return 0;
+}
