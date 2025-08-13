@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main () {
+    
+    float kg = 9.50;
+    float pesoT;
+    float calculo;
+    
+    printf("Digite o peso total das maçãs: \n");
+    scanf("%f", &pesoT);
+    
+    calculo = kg * pesoT;
+    
+    printf("Sua compra deu: %.2f\n", calculo);
+    
+    return 0;
+}
