@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main () {
+    
+    float n1, n2;
+    float calcMedia;
+    
+    printf("digite a primeira nota:\n");
+    scanf("%f", &n1);
+    
+    printf("digite a segunda nota:\n");
+    scanf("%f", &n2);
+    
+    calcMedia = (n1 + n2) / 2;
+    
+    if (calcMedia >= 7) {
+        printf("Aluno aprovado\n");
+        printf("Nota total = %.2f\n", calcMedia);
+    }
+    
+    else {
+        printf("Aluno reporovado\n");
+        printf("Nota total = %.2f\n", calcMedia);
+    }
+    
+    return 0;
+}
