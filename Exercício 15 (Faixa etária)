@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main () {
+    
+    int idade;
+    
+    printf("------CLASSIFICADOR DE FAIXA ETÁRIA------\n");
+    
+    printf("digite sua idade:\n");
+    scanf("%i", &idade);
+    
+    if (idade >= 1 && idade <= 12) {
+        printf("criança\n");
+    }
+    
+    else if (idade >= 13 && idade <= 17) {
+        printf("adolescente\n");
+    }
+    
+    else if (idade >= 18 && idade <= 59) {
+        printf("Adulto\n");
+    }
+    
+    else if (idade > 60 && idade <= 116) {
+            //até por que não é a freira Inah Canabarro Lucas né? eu acho...
+        printf("idoso\n");
+    }
+    
+    else {
+        printf("idade invalida\n");
+        return 1;
+    }
+  
+    return 0;
+}
