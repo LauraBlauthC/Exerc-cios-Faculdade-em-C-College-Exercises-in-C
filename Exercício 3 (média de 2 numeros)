@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    double n1, n2;
+    double media;
+    
+    printf("Vamos calcular a média de duas notas\n");
+    
+    printf("Digite a primeira nota: \n");
+    scanf("%lf", &n1);
+    
+    printf("Digite a segunda nota: \n");
+    scanf("%lf", &n2);
+    
+    media = (n1 + n2) / 2;
+    
+    printf("Sua média é: %lf\n", media);
+    
+    return 0;
+}
