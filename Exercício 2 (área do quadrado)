@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    int calculo;
+    
+    printf("Vamos calcular a área do quadrado em números inteiros\n");
+    
+    printf("Digite um número inteiro: ");
+    scanf("%d", &n);
+    
+    calculo = (n * n);
+    
+    printf("A área do seu quadrado é: %d\n", calculo);
+    
+    return 0;
+}
