@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    float valorCompra, desconto, valorFinal;
+    
+    printf("Digite o valor da sua compra para ganhar o desconto:\n");
+    scanf("%f", &valorCompra);
+    
+    if (valorCompra > 100) {
+        desconto = valorCompra * 0.10;
+        valorFinal = valorCompra - desconto;
+        printf("Seu desconto é de 10%%. Valor final da compra: R$ %.2f\n", valorFinal);
+    } 
+    
+    else if (valorCompra >= 50 && valorCompra <= 100) {
+        desconto = valorCompra * 0.05;
+        valorFinal = valorCompra - desconto;
+        printf("Seu desconto é de 5%%. valor final da compra: R$ %.2f\n", valorFinal);
+    }
+    
+    else {
+        printf("Valor muito baixo, desconto não aplicavel");
+    }
+    
+    return 0;
+}
