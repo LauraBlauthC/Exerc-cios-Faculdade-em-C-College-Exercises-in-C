@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int base;
+    int altura;
+    int calculo;
+    
+    printf("Vamos calcular a área de um triângulo em números inteiros\n");
+    
+    printf("Digite a base do seu triângulo: ");
+    scanf("%d", &base);
+    
+    printf("Digite a altura do seu triângulo: ");
+    scanf("%d", &altura);
+    
+    calculo = (base * altura) / 2;
+    
+    printf("A área do seu triângulo é: %d\n", calculo);
+    
+    return 0;
+}
